@@ -1,0 +1,62 @@
+<div class="cont">
+  <div
+    class="nav"
+    (scroll)="onscroll()"
+    [ngClass]="navbarfixed ? 'fixed' : 'nofixed'"
+  >
+    <div class="close_icon" (click)="toggle_nav_fun()">
+      <i class="fa-solid fa-bars" *ngIf="!toggle_nav"></i>
+      <i class="fa-solid fa-xmark" *ngIf="toggle_nav"></i>
+    </div>
+    <div class="nav_logo" (click)="onLogo()">
+      <img src="./../assets/work/bharath_g.svg" alt="" />
+    </div>
+    <nav class="nav_links" [ngClass]="{ mobile_nav: toggle_nav }">
+      <a
+        [routerLink]="['/work']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="toggle_nav = false"
+        >work</a
+      >
+      <a
+        [routerLink]="['/about']"
+        routerLinkActive="active"
+        (click)="toggle_nav = false"
+        >about</a
+      >
+      <a routerLinkActive="active" (click)="onResume(); toggle_nav = false"
+        >resume</a
+      >
+      <a
+        [routerLink]="['/photography']"
+        routerLinkActive="active"
+        (click)="toggle_nav = false"
+        >photography</a
+      >
+    </nav>
+  </div>
+  <div class="component">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="footer">
+    <div>
+      <p>Interested in working together? I'd love to hear from you.</p>
+      <div>
+        <a id="brand" href="https://www.linkedin.com/in/bgorental/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a id="brand" href="https://www.instagram.com/bgorental/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a id="brand" href="https://twitter.com/b_gorental"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </div>
+      <a href="mailto:bgorental@gmail.com" class="email_id"
+        >bgorental@gmail.com</a
+      >
+      <p class="copyright">&#169; 2020 Bharath Gorental</p>
+    </div>
+  </div>
+</div>

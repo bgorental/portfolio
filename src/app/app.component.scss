@@ -1,0 +1,231 @@
+@import "./../styles.scss";
+@import url("https://fonts.cdnfonts.com/css/gistesy");
+
+.cont {
+  // width: 100vw;
+  // margin: 2rem auto;
+  margin-top: 0 !important;
+  // background-color: $color-black;
+
+  .nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    overflow: hidden;
+    z-index: 5;
+    background-color: $color-black;
+    padding: 2rem 3rem;
+    width: 100%;
+
+    &_logo {
+      cursor: pointer;
+
+      img {
+        height: 2.2rem;
+      }
+    }
+
+    &_links {
+      display: flex;
+      list-style: none;
+
+      a {
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-left: 4rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transform: all 0.3s;
+        position: relative;
+        padding-bottom: 12px;
+        color: $color-white;
+        text-decoration: none !important;
+
+        &:after {
+          content: "";
+          position: absolute;
+          background: $color-clickable;
+          height: 0;
+          width: 100%;
+          left: 0;
+          bottom: 0px;
+          transition: 0.2s;
+        }
+
+        &:hover {
+          // color: $color-hover;
+
+          &:after {
+            height: 5px;
+            background: $color-clickable;
+          }
+        }
+      }
+    }
+  }
+
+  .component {
+    position: relative;
+    height: max-content;
+    // margin-bottom: 8rem;
+    // padding: 0 3rem;
+    // margin-top: 10rem;
+  }
+
+  .footer {
+    padding: 4rem 0;
+    padding-top: 5rem !important;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: #6e6e6e;
+
+    div>p:not(:last-child),
+    div>div {
+      margin-bottom: 1.2rem;
+    }
+
+    #brand {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 1.5rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        color: $color-primary;
+        // background: $color-clickable;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+      }
+
+      &:active {
+        color: $color-active;
+      }
+    }
+
+    .email_id {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .copyright {
+      margin-top: 1.4rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.active {
+  &:after {
+    content: "";
+    position: absolute;
+    height: 5px !important;
+    background: $color-clickable !important;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    transition: 0.2s;
+  }
+}
+
+.close_icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .cont {
+    // width: 145vw;
+  }
+
+  .close_icon {
+    display: block;
+  }
+
+  .nav {
+    width: 100%;
+    // height: 100vh;
+    overflow: hidden !important;
+    text-align: end !important;
+    flex-direction: row-reverse;
+    padding: 2rem !important;
+    // &_logo {
+    //   img {
+    //     display: none;
+    //   }
+    // }
+
+    &_links {
+      flex-direction: column;
+      display: none !important;
+      width: 100%;
+      height: 100%;
+
+      a {
+        font-size: 2rem !important;
+        width: max-content;
+        align-self: flex-end;
+        padding-bottom: 2px !important;
+        margin-bottom: 1rem;
+
+        &:after {
+          content: "";
+          height: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .mobile_nav {
+    flex-direction: column !important;
+    display: flex !important;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden !important;
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer>div {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .nav {
+    &_links {
+      a {
+        font-size: 1.6rem !important;
+      }
+    }
+  }
+}
+
+.fa-bars,
+.fa-xmark {
+  font-size: 1.5rem !important;
+}
+
+.fixed {
+  position: fixed !important;
+  width: 100% !important;
+  transition: 0.2s linear !important;
+  top: -200px !important;
+}
+
+.nofixed {
+  position: static !important;
+  transition: 0.2s linear !important;
+  top: -100px !important;
+}

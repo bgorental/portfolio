@@ -1,0 +1,32 @@
+<div class="work_cont">
+  <div class="introduce">
+    <h1>hi, i'm bharath.</h1>
+    <p>
+      UI/UX & Front-end Developer <span><a href="">@Okkular</a></span>
+    </p>
+    <div class="buttons">
+      <button class="primary_btn" [routerLink]="['/about']">
+        Read more <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <button class="primary_btn" (click)="onResume()">
+        Resume <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+  <div class="works">
+    <div
+      class="work"
+      *ngFor="let work of works"
+      (click)="onWork(work.project_title)"
+      [routerLink]=""
+    >
+      <img class="work_img" src="{{ work.image }}" alt="" />
+      <div class="work_content">
+        <p class="work_content-title" [innerHTML]="work.project_title"></p>
+        <p class="work_content-tag_line" style="width: 90%">
+          {{ work.tag_line }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

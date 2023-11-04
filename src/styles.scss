@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+$color-primary: #0f62fe;
+$color-secondary: #ff00cc;
+$color-hover: #0050e6;
+$color-active: #002d9c;
+$color-white: #fff;
+$color-black: #161616;
+$color-clickable: linear-gradient(to left, $color-secondary, $color-primary);
+$color-quickery-primary: #d8ff00;
+$color-quickery-secondary: #ffff1f;
+$color-quickery: linear-gradient(to left,
+    $color-quickery-secondary,
+    $color-quickery-primary);
+$color-quickery-active-1: #d9ff00;
+$color-quickery-active-2: #ffff00;
+$color-quickery-active: linear-gradient(to left,
+    $color-quickery-active-2,
+    $color-quickery-active-1);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: $color-black;
+}
+
+.primary_btn {
+  width: 172px;
+  height: 48px;
+  color: $color-white;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: $color-black;
+  text-align: start;
+  padding: 16px;
+  border-image: $color-clickable 1;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    transform: translateY(-0.1rem) scale(1.03);
+    border: none;
+    background-color: $color-hover;
+  }
+
+  &:active {
+    border: none;
+    background-color: $color-active;
+    transform: translateY(0rem) scale(1);
+  }
+}
+
+.tertiary_btn {
+  background: $color-clickable;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .primary_btn {
+    font-size: 11px;
+    padding: 11px !important;
+    margin: 0;
+  }
+}

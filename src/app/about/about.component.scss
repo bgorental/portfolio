@@ -1,0 +1,166 @@
+@import "./../../styles.scss";
+
+.about_cont {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0 3rem;
+  padding-top: 0;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 12rem;
+
+  &-introduce {
+    grid-area: 1/1/2/2;
+    font-size: 2rem;
+    font-weight: 600;
+
+    button {
+      margin-top: 3rem;
+    }
+  }
+
+  &-img {
+    grid-area: 1/2/2/-1;
+
+    img {
+      width: 35rem;
+      transform: translate(3rem, -3rem);
+    }
+  }
+
+  &-content {
+    grid-area: 2/1/-1/-1;
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    .working_currently {
+      margin-top: 2rem;
+      font-weight: 600;
+
+      span {
+        margin-left: 0.2rem;
+
+        a {
+          text-decoration: none;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #about_cont {
+    width: 85% !important;
+  }
+
+  .about_cont-introduce>span {
+    font-size: 1.5rem;
+  }
+
+  .about_cont-img {
+    img {
+      width: 30rem;
+      transform: translate(3rem, -3rem);
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #about_cont {
+    // display: flex !important;
+    // flex-direction: column;
+    width: 90% !important;
+
+    div {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .about_cont-img {
+    height: max-content !important;
+    width: max-content !important;
+
+    img {
+      width: 25rem;
+      transform: translate(3rem, 0rem);
+    }
+  }
+
+  .about_cont-introduce>span {
+    font-size: 1.2rem;
+  }
+
+  .about_cont-introduce {
+    height: max-content !important;
+    width: 26vw;
+  }
+
+  .about_cont-content {
+    margin-top: -6rem !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #about_cont {
+    display: flex !important;
+    flex-direction: column;
+    width: 90% !important;
+    height: max-content;
+    align-items: center;
+
+    div {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .about_cont-img {
+    height: max-content !important;
+    width: max-content !important;
+
+    img {
+      width: 20rem;
+      transform: translate(0rem, 0rem);
+    }
+  }
+
+  .about_cont-introduce>span {
+    font-size: 1.2rem;
+  }
+
+  .about_cont-introduce {
+    width: 100%;
+
+    span {
+      width: 100% !important;
+    }
+  }
+
+  .about_cont-content {
+    margin-top: 0 !important;
+    height: max-content !important;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #about_cont {
+    width: 95% !important;
+  }
+
+  .about_cont-img {
+    img {
+      width: 16rem;
+    }
+  }
+
+  .about_cont-introduce>span {
+    font-size: 1rem;
+  }
+}
