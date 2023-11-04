@@ -127,10 +127,18 @@
 .section_10 {
     display: grid;
     grid-template-columns: repeat(2, max-content);
+    grid-template-rows: max-content max-content;
     width: 100%;
-    padding: 8rem 0;
+    padding: 7rem 0;
     justify-content: center;
     column-gap: 8rem;
+
+    .writing {
+
+        &__headline {
+            grid-area: 1/1/2/-1;
+        }
+    }
 }
 
 .section_1,
@@ -151,6 +159,7 @@
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             font-size: 40px !important;
+
         }
 
         &__content {
@@ -205,10 +214,12 @@
         &__headline {
             font-family: 'Gabarito', cursive;
             font-size: 40px !important;
-
             background: linear-gradient(to right, #f67f3e, #fcb995);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
+            grid-area: 1/1/2/-1;
+            justify-content: end;
+            width: 100%;
         }
 
         &__content {
@@ -293,7 +304,7 @@
 
 
         ul>li {
-            font-size: 20px !important;
+            font-size: 22px !important;
             color: #4f5458 !important;
             list-style-type: square;
             margin-left: 20px;
@@ -306,7 +317,7 @@
             }
 
             &:not(:last-child) {
-                margin-bottom: .6rem;
+                margin-bottom: 1rem;
             }
         }
 
@@ -648,8 +659,8 @@ strong {
 
 .inside_vector {
     position: absolute;
-    bottom: -9rem;
-    left: 9rem;
+    bottom: -8rem;
+    right: 4rem;
     width: 15rem
 }
 
@@ -1602,8 +1613,6 @@ strong {
 }
 
 @media only screen and (max-width: 420px) {
-
-
     .approach-green {
         height: 880rem !important;
     }
@@ -1611,8 +1620,6 @@ strong {
 
 
 @media only screen and (max-width: 410px) {
-
-
     .approach-green {
         height: 860rem !important;
     }
@@ -1620,16 +1627,12 @@ strong {
 
 
 @media only screen and (max-width: 400px) {
-
-
     .approach-green {
         height: 840rem !important;
     }
 }
 
 @media only screen and (max-width: 390px) {
-
-
     .approach-green {
         height: 820rem !important;
     }
