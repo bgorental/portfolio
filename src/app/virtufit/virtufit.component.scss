@@ -758,6 +758,8 @@ strong {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media only screen and (max-width: 500px) {
     .project_intro {
+        padding: 0 !important;
+
         &_video {
             position: relative !important;
             width: 360px !important;
@@ -771,6 +773,10 @@ strong {
             bottom: -.8rem;
             right: -1.7rem;
         }
+    }
+
+    .project_intro_video_cont {
+        padding-bottom: 3rem !important;
     }
 
     .project_intro_overview {
@@ -800,6 +806,7 @@ strong {
             width: 360px !important;
             height: 360px !important;
             margin-bottom: 2.5rem;
+            grid-area: 2/1/3/-1 !important;
         }
 
         .video iframe {
@@ -817,7 +824,9 @@ strong {
 
             &__headline {
                 font-size: 24px !important;
-                margin-bottom: 1rem;
+                margin-bottom: -1.5rem;
+                padding: 0 2rem;
+                grid-area: 1/1/2/-1 !important;
             }
 
             &__content p,
@@ -828,22 +837,35 @@ strong {
             }
 
             .writing__content ul>li {
-                font-size: 16px !important;
+                font-size: 18px !important;
                 margin-left: 16px;
                 font-weight: 300 !important;
-                margin-bottom: 0.4rem;
+                margin-bottom: 0.6rem !important;
+            }
+
+            .writing__content ul {
+                margin-bottom: 2rem !important;
             }
         }
+    }
+
+    .approach-11-img {
+        margin-bottom: 2rem !important;
+    }
+
+    .section-3-sec-head {
+        padding: 0 !important;
+        margin: 1rem auto !important;
     }
 
     .section_2,
     .section_4,
     .section_6,
     .section_9 {
-        display: flex;
+        // display: flex;
 
-        flex-direction: column-reverse;
-        align-items: center;
+        // flex-direction: column-reverse;
+        // align-items: center;
     }
 
     .inside_vector {
@@ -863,6 +885,23 @@ strong {
         // width: 100% !important;
         padding: 2rem 0;
         // background-color: #ecf9f9;
+
+        .writing {
+            width: 80% !important;
+
+            &__headline {
+                margin-bottom: -1rem;
+            }
+
+            &__content p,
+            .writing__content div {
+                font-size: 18px !important;
+                margin-bottom: .8rem;
+                font-weight: 300 !important;
+            }
+        }
+
+
 
         &--video {
             width: 720px;
@@ -1454,8 +1493,9 @@ strong {
 
         p,
         p>strong {
-            font-size: 24px;
+            font-size: 18px !important;
             line-height: normal;
+            font-weight: 500 !important;
 
             .quotes {
                 width: 1.5rem;
@@ -1524,14 +1564,22 @@ strong {
 
         p {
             transform: translateX(-.2rem) !important;
+            width: 90% !important;
         }
 
         .qoutes {
             transform: translateX(-1rem);
+            width: 2rem !important;
+            height: auto;
         }
 
         .qoute-start {
-            transform: translate(-2.5rem, -1.5rem) !important;
+            transform: translate(0rem, -.6rem) !important;
+            width: 2rem !important;
+        }
+
+        .qoute-end {
+            width: 2rem !important;
         }
     }
 
@@ -1586,6 +1634,18 @@ strong {
     .approach-green {
         height: 982rem !important;
     }
+
+    .one-three-2 {
+        grid-column: 1/2 !important;
+        transform: translate(3rem, 10rem) !important;
+        width: 170%;
+    }
+
+    .one-three-3 {
+        grid-column: 1/2 !important;
+        transform: translate(3rem, 8.5rem) !important;
+        width: 170%;
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -1618,6 +1678,12 @@ strong {
     .approach-green {
         height: 920rem !important;
     }
+
+    .one-three-2 {
+        grid-column: 1/2 !important;
+        transform: translate(2rem, 10rem) !important;
+        width: 170%;
+    }
 }
 
 
@@ -1627,33 +1693,68 @@ strong {
     .approach-green {
         height: 900rem !important;
     }
+
+    .one-three-2 {
+        grid-column: 1/2 !important;
+        transform: translate(3rem, 10rem) !important;
+        width: 170%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
     .approach-green {
         height: 862rem !important;
     }
+
+    .one-three-2 {
+        grid-column: 1/2 !important;
+        transform: translate(2rem, 10rem) !important;
+        width: 170%;
+    }
 }
 
 
 @media only screen and (max-width: 410px) {
     .approach-green {
-        height: 860rem !important;
+        height: 844rem !important;
     }
 }
 
 
 @media only screen and (max-width: 400px) {
     .approach-green {
-        height: 840rem !important;
+        height: 834rem !important;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .approach-green {
+        height: 834rem !important;
     }
 }
 
 @media only screen and (max-width: 390px) {
     .approach-green {
-        height: 820rem !important;
+        height: 824rem !important;
     }
 }
 
+@media only screen and (max-width: 380px) {
+    .approach-green {
+        height: 806rem !important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .approach-green {
+        height: 790rem !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .approach-green {
+        height: 780rem !important;
+    }
+}
 
 ////////////////////////////////////////////////////////// Like Button
