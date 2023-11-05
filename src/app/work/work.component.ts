@@ -9,8 +9,8 @@ import { Router } from "@angular/router";
 export class WorkComponent implements OnInit {
   works = [
     {
-      project_title: "VirtuFit <br> See It, Try It, Love It",
-      tag_line: "UX Project | Virtual fitting room feature in Myntra | Mobile app",
+      project_title: "VirtuFit",
+      tag_line: "UX Project | Virtual fitting room feature for Myntra | Mobile app",
       image: "./assets/work/virtufit/Virtufit-banner.png",
     },
     {
@@ -59,7 +59,7 @@ export class WorkComponent implements OnInit {
       window.open(
         "https://bgorental.medium.com/multifunctional-kitchen-cleaning-device-6909cfadb446"
       );
-    } else if (work == "VirtuFit <br> See It, Try It, Love It") {
+    } else if (work == "VirtuFit") {
       this.router.navigate(["/virtufit"]);
     }
   }
