@@ -7,6 +7,7 @@
 }
 
 .VirtuFit-Main-container {
+    overflow: hidden !important;
     // height: 80vh;
     width: 100%;
     // // padding: 2rem;
@@ -520,7 +521,7 @@ strong {
         column-gap: 5rem;
         width: 100%;
         margin: auto;
-        align-items: baseline;
+        align-items: start;
         padding-top: 2.5rem;
         position: relative !important;
 
@@ -544,7 +545,7 @@ strong {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     margin: 8rem auto;
-    align-items: baseline;
+    align-items: start;
     height: 40rem;
 
 }
@@ -715,7 +716,8 @@ strong {
     color: #585858;
     margin-bottom: 1.5rem;
     padding-left: 5rem;
-    margin-top: -.5rem;
+    margin-top: 0.5rem;
+    width: 93%;
 }
 
 .trans__sub_sec_heads {
@@ -1457,7 +1459,7 @@ strong {
             width: 95% !important;
             padding: 0 !important;
             padding-left: 1rem !important;
-            transform: translateY(-8rem);
+            transform: translateY(-3rem);
             margin-bottom: 1.5rem;
         }
 
@@ -1465,12 +1467,12 @@ strong {
             width: 95% !important;
             padding: 0 !important;
             padding-left: 2rem !important;
-            transform: translateY(-8rem);
+            transform: translateY(-4rem);
         }
     }
 
     .approach_sub-sections-trans-2 {
-        transform: translateY(-8rem);
+        transform: translateY(-6rem);
     }
 
     .trans-2-1 {
@@ -1483,8 +1485,8 @@ strong {
         color: #585858;
         margin-bottom: 1.5rem;
         padding-left: 2.5rem;
-        margin-top: -.5rem;
-        transform: translateY(-7rem);
+        margin-top: 0.2rem;
+        transform: translateY(-3rem);
         width: 90%;
     }
 
@@ -1508,7 +1510,7 @@ strong {
     }
 
     .trans-3-mob {
-        transform: translateY(-6rem);
+        transform: translateY(-4rem);
     }
 
     .trans_5_2_gif {
