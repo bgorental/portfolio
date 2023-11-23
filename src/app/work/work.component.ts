@@ -11,27 +11,27 @@ export class WorkComponent implements OnInit {
     {
       project_title: "VirtuFit",
       tag_line: "UX Project | Virtual fitting room feature for Myntra | Mobile app",
-      image: "./assets/work/virtufit/Virtufit-banner.png",
+      image: "./assets/work/virtufit/virtufit-thumbnail.gif",
     },
     {
       project_title: "SparkleClean - Tool for Effortless Cleaning",
       tag_line: "UX case study on improving kicthen users' experience | External link to article on Medium",
-      image: "./assets/work/medium_case-study/sparkleclean-2.png",
+      image: "./assets/work/medium_case-study/sparkleclean-thumbnail.gif",
     },
     {
       project_title: "Spotify Music App’s Usability",
       tag_line: "UX case study on improving Spotify Music App’s Usability | External link to article on Medium",
-      image: "./assets/work/medium_case-study/spotify.jpg",
+      image: "./assets/work/medium_case-study/Spotify-thumbnail.gif",
     },
     {
       project_title: "quickery",
       tag_line: "UX Project | Food delivery app | Mobile app",
-      image: "./assets/work/quickery/quickery-banner-4.png",
+      image: "./assets/work/quickery/quickery-thumbnail.gif",
     },
     {
       project_title: "picazu",
       tag_line: "UX Project | Retailer dashboard | Web app",
-      image: "./assets/work/user_dashboard/picazu_banner-1.png",
+      image: "./assets/work/user_dashboard/Picazu-thumbnail.gif",
     },
   ];
 
