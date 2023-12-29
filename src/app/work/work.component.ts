@@ -11,7 +11,17 @@ export class WorkComponent implements OnInit {
     {
       project_title: "VirtuFit",
       tag_line: "UX Project | Virtual fitting room feature for Myntra | Mobile app",
-      image: "./assets/work/virtufit/virtufit-thumbnail.gif",
+      image: "./assets/work/virtufit/virtufit-thumbnail-2.gif",
+    },
+    {
+      project_title: "picazu",
+      tag_line: "UX Project | Retailer dashboard | Web app",
+      image: "./assets/work/user_dashboard/Picazu-thumbnail.gif",
+    },
+    {
+      project_title: "quickery",
+      tag_line: "UX Project | Food delivery app | Mobile app",
+      image: "./assets/work/quickery/quickery-thumbnail-2.gif",
     },
     {
       project_title: "SparkleClean - Tool for Effortless Cleaning",
@@ -23,16 +33,8 @@ export class WorkComponent implements OnInit {
       tag_line: "UX case study on improving Spotify Music App’s Usability | External link to article on Medium",
       image: "./assets/work/medium_case-study/Spotify-thumbnail.gif",
     },
-    {
-      project_title: "quickery",
-      tag_line: "UX Project | Food delivery app | Mobile app",
-      image: "./assets/work/quickery/quickery-thumbnail.gif",
-    },
-    {
-      project_title: "picazu",
-      tag_line: "UX Project | Retailer dashboard | Web app",
-      image: "./assets/work/user_dashboard/Picazu-thumbnail.gif",
-    },
+
+
   ];
 
   constructor(private router: Router) { }
