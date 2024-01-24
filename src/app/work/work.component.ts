@@ -47,6 +47,12 @@ export class WorkComponent implements OnInit {
     );
   }
 
+  onOkkular() {
+    window.open(
+      "https://www.okkular.io"
+    );
+  }
+
   onWork(work: string) {
     console.log("work", work);
     if (work == "quickery") {

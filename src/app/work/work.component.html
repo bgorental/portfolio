@@ -2,7 +2,8 @@
   <div class="introduce">
     <h1>hi, i'm bharath.</h1>
     <p>
-      UI/UX & Front-end Developer <span><a href="">@Okkular</a></span>
+      Product Designer & Front-end Developer
+      <span><a (click)="onOkkular()">@Okkular</a></span>
     </p>
     <div class="buttons">
       <button class="primary_btn" [routerLink]="['/about']">
@@ -20,12 +21,26 @@
       (click)="onWork(work.project_title)"
       [routerLink]=""
     >
-      <img class="work_img" src="{{ work.image }}" alt="" />
+      <div class="work_image">
+        <img class="work_img" src="{{ work.image }}" alt="" />
+      </div>
+
       <div class="work_content">
         <p class="work_content-title" [innerHTML]="work.project_title"></p>
         <p class="work_content-tag_line" style="width: 90%">
           {{ work.tag_line }}
         </p>
+        <button
+          class="primary_btn secondary_btn"
+          *ngIf="
+            work.project_title !== 'quickery' &&
+            work.project_title !== 'picazu' &&
+            work.project_title !== 'VirtuFit'
+          "
+          style="margin-top: 1.5rem"
+        >
+          View case study on Medium
+        </button>
       </div>
     </div>
   </div>

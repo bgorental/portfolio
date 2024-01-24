@@ -6,6 +6,7 @@ $color-active: #002d9c;
 $color-white: #fff;
 $color-black: #161616;
 $color-clickable: linear-gradient(to left, $color-secondary, $color-primary);
+$color-clickable-secondary: linear-gradient(to left, $color-secondary, $color-secondary);
 $color-quickery-primary: #d8ff00;
 $color-quickery-secondary: #ffff1f;
 $color-quickery: linear-gradient(to left,
@@ -86,6 +87,7 @@ p {
 a {
   color: $color-primary;
   text-decoration: none;
+  cursor: pointer !important;
 
   &:hover {
     text-decoration: underline !important;
