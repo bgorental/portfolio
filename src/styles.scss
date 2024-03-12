@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-$color-primary: #0f62fe;
-$color-secondary: #ff00cc;
+$color-primary: #756efb;
+$color-secondary: #a77bff;
 $color-hover: #0050e6;
 $color-active: #002d9c;
-$color-white: #fff;
-$color-black: #161616;
+$color-white: #E0E6FF;
+$color-black: #1d1b28;
 $color-clickable: linear-gradient(to left, $color-secondary, $color-primary);
 $color-clickable-secondary: linear-gradient(to left, $color-secondary, $color-secondary);
 $color-quickery-primary: #d8ff00;
@@ -51,27 +51,39 @@ body {
   border: none;
   font-size: 14px;
   font-weight: 500;
-  background-color: $color-black;
+  background: $color-clickable;
   text-align: start;
   padding: 16px;
-  border-image: $color-clickable 1;
+  // border-image: $color-clickable 1;
+  border: none !important;
   border-width: 2px;
   border-style: solid;
   cursor: pointer;
   display: flex;
   align-items: center;
+  transition: all .3s;
+  backface-visibility: hidden;
+  border-radius: 20px;
 
   &:hover {
-    transform: translateY(-0.1rem) scale(1.03);
-    border: none;
+    transform: translateY(-0.1rem) scale(1.01);
+    // border: none;
+
     background-color: $color-hover;
   }
 
   &:active {
-    border: none;
+    // border: none;
     background-color: $color-active;
     transform: translateY(0rem) scale(1);
   }
+}
+
+.primary_btn-sm {
+  width: max-content !important;
+  height: max-content !important;
+  font-size: 12px !important;
+  padding: 8px 1.5rem;
 }
 
 .tertiary_btn {

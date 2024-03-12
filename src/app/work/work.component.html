@@ -5,15 +5,16 @@
       Product Designer & Front-end Developer
       <span><a (click)="onOkkular()">@Okkular</a></span>
     </p>
-    <div class="buttons">
+    <!-- <div class="buttons">
       <button class="primary_btn" [routerLink]="['/about']">
         Read more <i class="fa-solid fa-arrow-right"></i>
       </button>
       <button class="primary_btn" (click)="onResume()">
         Resume <i class="fa-solid fa-arrow-right"></i>
       </button>
-    </div>
+    </div> -->
   </div>
+  <!-- <h1 class="works-title">Works</h1> -->
   <div class="works">
     <div
       class="work"
@@ -26,21 +27,36 @@
       </div>
 
       <div class="work_content">
+        <!-- <div class="cont-bckgrd"></div> -->
         <p class="work_content-title" [innerHTML]="work.project_title"></p>
+        <p
+          style="
+            width: 100%;
+            border-bottom: 2px solid #353050;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+          "
+          class="work_content-brief"
+        >
+          {{ work.brief }}
+        </p>
         <p class="work_content-tag_line" style="width: 90%">
           {{ work.tag_line }}
         </p>
+
         <button
-          class="primary_btn secondary_btn"
-          *ngIf="
-            work.project_title !== 'quickery' &&
-            work.project_title !== 'picazu' &&
-            work.project_title !== 'VirtuFit'
-          "
-          style="margin-top: 1.5rem"
+          class="primary_btn primary_btn-sm"
+          style="margin: 0 !important; letter-spacing: 0.5px; justify-self: end"
         >
-          View case study on Medium
+          {{
+            work.project_title == "SparkleClean"
+              ? "View case study on Medium"
+              : work.project_title == "Spotify"
+              ? "View Case Study on Medium"
+              : "View Case Study"
+          }}
         </button>
+        <!-- <a href="" class="btn-shine" target="_blank">View Case Study →</a> -->
       </div>
     </div>
   </div>
