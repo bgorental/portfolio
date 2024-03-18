@@ -7,33 +7,8 @@ import { Router } from "@angular/router";
   styleUrls: ["./work.component.scss"],
 })
 export class WorkComponent implements OnInit {
-  works = [
-    {
-      project_title: "VirtuFit",
-      tag_line: "UX Project | Virtual fitting room feature for Myntra | Mobile app",
-      image: "./assets/work/virtufit/Virtufit-banner.png",
-    },
-    {
-      project_title: "SparkleClean - Tool for Effortless Cleaning",
-      tag_line: "UX case study on improving kicthen users' experience | External link to article on Medium",
-      image: "./assets/work/medium_case-study/sparkleclean-2.png",
-    },
-    {
-      project_title: "Spotify Music App’s Usability",
-      tag_line: "UX case study on improving Spotify Music App’s Usability | External link to article on Medium",
-      image: "./assets/work/medium_case-study/spotify.jpg",
-    },
-    {
-      project_title: "quickery",
-      tag_line: "UX Project | Food delivery app | Mobile app",
-      image: "./assets/work/quickery/quickery-banner-4.png",
-    },
-    {
-      project_title: "picazu",
-      tag_line: "UX Project | Retailer dashboard | Web app",
-      image: "./assets/work/user_dashboard/picazu_banner-1.png",
-    },
-  ];
+
+  project_arrow: any = './../../assets/work/arrow-icon-enable.png'
 
   constructor(private router: Router) { }
 
@@ -46,21 +21,16 @@ export class WorkComponent implements OnInit {
   }
 
   onWork(work: string) {
-    console.log("work", work);
-    if (work == "quickery") {
-      this.router.navigate(["/quickery"]);
-    } else if (work == "picazu") {
-      this.router.navigate(["/picazu"]);
-    } else if (work == "Spotify Music App’s Usability") {
+    if (work == "spotify") {
       window.open(
         "https://bgorental.medium.com/improving-spotify-music-apps-usability-through-heuristic-evaluation-fce329a4dd46"
       );
-    } else if (work == "SparkleClean - Tool for Effortless Cleaning") {
+    } else if (work == "sparkle") {
       window.open(
         "https://bgorental.medium.com/multifunctional-kitchen-cleaning-device-6909cfadb446"
       );
-    } else if (work == "VirtuFit") {
-      this.router.navigate(["/virtufit"]);
+    } else {
+      this.router.navigate([`/${work}`]);
     }
   }
 }

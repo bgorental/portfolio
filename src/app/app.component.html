@@ -10,6 +10,10 @@
     </div>
     <div class="nav_logo" (click)="onLogo()">
       <img src="./../assets/work/bharath_g.svg" alt="" />
+      <div class="nav_logo-cont">
+        <p class="nav_logo-cont-name">Bharath Gorental</p>
+        <p class="nav_logo-cont-role">Product Designer</p>
+      </div>
     </div>
     <nav class="nav_links" [ngClass]="{ mobile_nav: toggle_nav }">
       <a
@@ -28,12 +32,12 @@
       <a routerLinkActive="active" (click)="onResume(); toggle_nav = false"
         >resume</a
       >
-      <a
+      <!-- <a
         [routerLink]="['/photography']"
         routerLinkActive="active"
         (click)="toggle_nav = false"
         >photography</a
-      >
+      > -->
     </nav>
   </div>
   <div class="component">
@@ -41,7 +45,10 @@
   </div>
   <div class="footer">
     <div>
-      <p>Interested in working together? I'd love to hear from you.</p>
+      <p class="footer--headline">Get <span>in Touch.</span></p>
+      <p class="footer--tagline">
+        Interested in working together? I'd love to hear from you.
+      </p>
       <div>
         <a id="brand" href="https://www.linkedin.com/in/bgorental/"
           ><i class="fa-brands fa-linkedin-in"></i
@@ -49,14 +56,17 @@
         <a id="brand" href="https://www.instagram.com/bgorental/"
           ><i class="fa-brands fa-instagram"></i
         ></a>
-        <a id="brand" href="https://twitter.com/b_gorental"
+        <a id="brand" href="mailto:bgorental@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a id="brand" href="https://twitter.com/bgorental"
           ><i class="fa-brands fa-twitter"></i
         ></a>
       </div>
-      <a href="mailto:bgorental@gmail.com" class="email_id"
+      <!-- <a href="mailto:bgorental@gmail.com" class="email_id"
         >bgorental@gmail.com</a
-      >
-      <p class="copyright">&#169; 2020 Bharath Gorental</p>
+      > -->
+      <p class="copyright">&#169; 2020 <span>Bharath Gorental</span></p>
     </div>
   </div>
 </div>

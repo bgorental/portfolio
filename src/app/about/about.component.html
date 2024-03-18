@@ -1,30 +1,64 @@
 <div class="about_cont" id="about_cont">
-  <div class="about_cont-introduce">
-    <span
-      >Just a simple guy <br />
-      who wants to create awesome stuff!</span
-    >
-    <a
-      style="margin-top: 1.5rem"
-      class="primary_btn"
-      href="mailto: bgorental@gmail.com"
-    >
-      Say Hello!
-    </a>
+  <div class="about_cont-introduce_img">
+    <div class="about_cont-introduce">
+      <span
+        >Just a <span class="text_imp">simple guy</span> <br />
+        who wants to create <span class="text_imp">awesome stuff!</span></span
+      >
+      <a class="primary_btn" href="mailto:bgorental@gmail.com">
+        Say Hello!
+        <div class="hello_img"></div
+      ></a>
+    </div>
+    <div class="about_cont-img">
+      <img src="./../../assets/about/bgorental.png" alt="" />
+    </div>
   </div>
-  <div class="about_cont-img">
-    <img src="./../../assets/about/bgorental.png" alt="" />
-  </div>
+
   <div class="about_cont-content">
-    <p>
-      I am Bharath, A Front-End Developer and UI/ UX Designer. that pretty much
-      sums it up. whether it's solving a complex design problem, or just fixing
-      the small issue in the house, I aim for simple, intuitive solutions that
-      will improve the lives around me.
-    </p>
     <p class="working_currently">
-      Currently working as a UI/UX & Front-end Developer
-      <span><a href="">@Okkular</a></span>
+      Currently working at
+      <span class="tertiary_btn"
+        ><a href="https://www.okkular.io/">@Okkular</a></span
+      >
+      as a
     </p>
+
+    <div class="working_currently-cont">
+      <p>Product Designer</p>
+      <ul>
+        <li>
+          Creating easy-to-use and visually pleasing interfaces for a better
+          user experience.
+        </li>
+        <li>
+          Working with different teams to design user-friendly front-end
+          layouts.
+        </li>
+        <li>
+          Making designs better based on feedback and current design trends.
+        </li>
+      </ul>
+    </div>
+    <div class="working_currently-cont">
+      <p>Front-End Developer</p>
+      <ul>
+        <li>Developing user interfaces for smooth interactions.</li>
+        <li>Quickly fixing issues to keep user experiences error-free.</li>
+        <li>
+          Collaborating with teams for a seamless blend of design and
+          functionality.
+        </li>
+      </ul>
+    </div>
   </div>
+
+  <button
+    class="primary_btn"
+    style="padding: 12px 20px 12px 28px !important; margin-bottom: 150px"
+    (click)="onResume()"
+  >
+    Resume
+    <div class="arrow_img"></div>
+  </button>
 </div>

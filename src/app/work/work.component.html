@@ -1,32 +1,256 @@
-<div class="work_cont">
-  <div class="introduce">
-    <h1>hi, i'm bharath.</h1>
-    <p>
-      UI/UX & Front-end Developer <span><a href="">@Okkular</a></span>
-    </p>
-    <div class="buttons">
-      <button class="primary_btn" [routerLink]="['/about']">
-        Read more <i class="fa-solid fa-arrow-right"></i>
-      </button>
-      <button class="primary_btn" (click)="onResume()">
-        Resume <i class="fa-solid fa-arrow-right"></i>
-      </button>
-    </div>
-  </div>
-  <div class="works">
-    <div
-      class="work"
-      *ngFor="let work of works"
-      (click)="onWork(work.project_title)"
-      [routerLink]=""
-    >
-      <img class="work_img" src="{{ work.image }}" alt="" />
-      <div class="work_content">
-        <p class="work_content-title" [innerHTML]="work.project_title"></p>
-        <p class="work_content-tag_line" style="width: 90%">
-          {{ work.tag_line }}
-        </p>
+<div class="cont_main">
+  <div class="works-cont">
+    <div class="head">Selected<span> Works</span></div>
+    <div class="works">
+      <div class="works__each__card works__each__card--1">
+        <div class="works__each__card--img works__each__card--1--img">
+          <img
+            src="./../../assets/work/virtufit/VirtuFit Thumbnail.gif"
+            alt=""
+          />
+        </div>
+        <div class="works__each__card--content works__each__card--1--content">
+          <div
+            class="works__each__card--content--head works__each__card--1--content--head"
+          >
+            VirtuFit
+          </div>
+          <div
+            class="works__each__card--content--tagline works__each__card--1--content--tagline"
+          >
+            <span>Virtual TryOn Experience to Enhance </span>
+            <span
+              class="works__each__card--content--tagline--imp works__each__card--1--content--tagline--imp"
+              >Conversion Rate.</span
+            >
+          </div>
+          <div
+            class="works__each__card--content--details works__each__card--1--content--details"
+          >
+            <span>UX Design</span>
+            <div class="dot"></div>
+            <span>15 min read</span>
+            <div class="dot"></div>
+            <span>Dec 20, 2023</span>
+          </div>
+          <div
+            class="works__each__card--content--btn works__each__card--1--content--btn"
+          >
+            <button class="primary_btn" (click)="onWork('virtufit')">
+              View Case Study
+              <div class="arrow_img"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="works__each__card works__each__card--2">
+        <div class="works__each__card--img works__each__card--2--img">
+          <img
+            src="./../../assets/work/user_dashboard/Picazu-thumbnail.gif"
+            alt=""
+          />
+        </div>
+        <div class="works__each__card--content works__each__card--2--content">
+          <div
+            class="works__each__card--content--head works__each__card--2--content--head"
+          >
+            Picazu
+          </div>
+          <div
+            class="works__each__card--content--tagline works__each__card--2--content--tagline"
+          >
+            <span>Dashboard to track - </span>
+            <span
+              class="works__each__card--content--tagline--imp works__each__card--2--content--tagline--imp"
+              >Operational Efficiency & Financial Performance.</span
+            >
+          </div>
+          <div
+            class="works__each__card--content--details works__each__card--2--content--details"
+          >
+            <span>UX Design</span>
+            <div class="dot"></div>
+            <span>15 min read</span>
+            <div class="dot"></div>
+            <span>Dec 20, 2023</span>
+          </div>
+          <div
+            class="works__each__card--content--btn works__each__card--2--content--btn"
+          >
+            <button class="primary_btn" (click)="onWork('picazu')">
+              View Case Study
+              <div class="arrow_img"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="works__each__card works__each__card--3">
+        <div class="works__each__card--img works__each__card--3--img">
+          <img
+            src="./../../assets/work/quickery/quickery-thumbnail.gif"
+            alt=""
+          />
+        </div>
+        <div class="works__each__card--content works__each__card--3--content">
+          <div
+            class="works__each__card--content--head works__each__card--3--content--head"
+          >
+            Quickery
+          </div>
+          <div
+            class="works__each__card--content--tagline works__each__card--3--content--tagline"
+          >
+            <span>Enhancing </span>
+            <span
+              class="works__each__card--content--tagline--imp works__each__card--3--content--tagline--imp"
+              >Accessibility & satisfaction</span
+            >
+            <span> through personalised food suggestions</span>
+          </div>
+          <div
+            class="works__each__card--content--details works__each__card--3--content--details"
+          >
+            <span>UX Design</span>
+            <div class="dot"></div>
+            <span>15 min read</span>
+            <div class="dot"></div>
+            <span>Dec 20, 2023</span>
+          </div>
+          <div
+            class="works__each__card--content--btn works__each__card--3--content--btn"
+          >
+            <button class="primary_btn" (click)="onWork('quickery')">
+              View Case Study
+              <div class="arrow_img"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="works__each__card works__each__card--4">
+        <div class="works__each__card--img works__each__card--4--img">
+          <img
+            src="./../../assets/work/medium_case-study/sparkleclean-thumbnail.gif"
+            alt=""
+          />
+        </div>
+        <div class="works__each__card--content works__each__card--4--content">
+          <div
+            class="works__each__card--content--head works__each__card--4--content--head"
+          >
+            Sparkle
+          </div>
+          <div
+            class="works__each__card--content--tagline works__each__card--4--content--tagline"
+          >
+            <span>Design thinking to Enhance </span>
+            <span
+              class="works__each__card--content--tagline--imp works__each__card--4--content--tagline--imp"
+              >Kitchen Experience.</span
+            >
+          </div>
+          <div
+            class="works__each__card--content--details works__each__card--4--content--details"
+          >
+            <span>UX Design</span>
+            <div class="dot"></div>
+            <span>9 min read</span>
+            <div class="dot"></div>
+            <span>Dec 20, 2023</span>
+          </div>
+          <div
+            class="works__each__card--content--btn works__each__card--4--content--btn"
+          >
+            <button class="primary_btn" (click)="onWork('sparkle')">
+              View case study on medium
+              <div class="arrow_img"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="works__each__card works__each__card--5">
+        <div class="works__each__card--img works__each__card--5--img">
+          <img
+            src="./../../assets/work/medium_case-study/Spotify-thumbnail.gif"
+            alt=""
+          />
+        </div>
+        <div class="works__each__card--content works__each__card--5--content">
+          <div
+            class="works__each__card--content--head works__each__card--5--content--head"
+          >
+            Spotify
+          </div>
+          <div
+            class="works__each__card--content--tagline works__each__card--5--content--tagline"
+          >
+            <span>Using Heuristics to improve </span>
+            <span
+              class="works__each__card--content--tagline--imp works__each__card--5--content--tagline--imp"
+              >Usability of Spotify.</span
+            >
+          </div>
+          <div
+            class="works__each__card--content--details works__each__card--5--content--details"
+          >
+            <span>UX Design</span>
+            <div class="dot"></div>
+            <span>8 min read</span>
+            <div class="dot"></div>
+            <span>Dec 20, 2023</span>
+          </div>
+          <div
+            class="works__each__card--content--btn works__each__card--5--content--btn"
+          >
+            <button class="primary_btn" (click)="onWork('spotify')">
+              View case study on medium
+              <div class="arrow_img"></div>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="about__me">
+    <div class="about__me--content">
+      <div class="head">A bit<span> About me</span></div>
+      <div class="about__me--content--text">
+        I am a Product Designer.<span class="about__me--content--text--imp">
+          Whether it's solving a complex design problem, or just fixing a small
+          issue in the house, I aim for simple, intuitive solutions that will
+          improve the lives around me. </span
+        >Besides design, I do Front-End Development, love music, photography and
+        travelling.
+      </div>
+      <button
+        class="primary_btn button-with-arrow"
+        [routerLink]="['/about']"
+        routerLinkActive="active"
+      >
+        Know More
+        <div class="arrow_img"></div>
+      </button>
+    </div>
+    <div class="about__me--img">
+      <div><img src="./../../assets/about/music-img.png" alt="" /></div>
+      <div class="about__me--img--2">
+        <img src="./../../assets/about/photography-img.png" alt="" />
+        <img src="./../../assets/about/travel-img.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="highlights">
+    <div class="head">Recent <span>Highlights</span></div>
+    <div class="highlights--imgs">
+      <img src="./../../assets/highlights/3.png" alt="" />
+      <img
+        class="highlights--imgs--large"
+        src="./../../assets/highlights/2.png"
+        alt=""
+      />
+      <img src="./../../assets/highlights/1.png" alt="" />
+    </div>
+  </div>
+  <!-- <div class="feedback">
+    <div class="head">Selected <span>Feedback</span></div>
+  </div> -->
 </div>

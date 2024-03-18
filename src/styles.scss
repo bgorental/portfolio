@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-$color-primary: #0f62fe;
-$color-secondary: #ff00cc;
+$color-primary: #FF560D;
+$color-secondary: #FD2256;
 $color-hover: #0050e6;
 $color-active: #002d9c;
 $color-white: #fff;
-$color-black: #161616;
+$color-black: #010208;
 $color-clickable: linear-gradient(to left, $color-secondary, $color-primary);
 $color-quickery-primary: #d8ff00;
 $color-quickery-secondary: #ffff1f;
@@ -16,6 +16,43 @@ $color-quickery-active-2: #ffff00;
 $color-quickery-active: linear-gradient(to left,
     $color-quickery-active-2,
     $color-quickery-active-1);
+
+$color-primary-orange: #FF560D;
+$color-primary-pink: #FD2256;
+$color-primary-gradient: linear-gradient(to bottom right,
+    $color-primary-orange 30%,
+    $color-primary-pink);
+
+$text-imp: #E3E4E6;
+$text-grey: rgba(#E3E4E6, 55%);
+$text-project-grey: #AAAAAA;
+
+$color-card-orange-btn-fill: linear-gradient(to right, rgba(#FF560D, 55%), rgba(#FD2256, 55%)); // make it 50%
+$color-card-orange-btn-stroke: linear-gradient(to right, #472622, #A76553);
+$color-card-orange-dot: #7A4438;
+
+$color-card-violet-btn-fill: linear-gradient(to right, rgba(#6323A2, 55%), rgba(#BF60FA, 55%)); // make it 50%
+$color-card-violet-btn-stroke: linear-gradient(to top right, #6223A2, #C060FA);
+$color-card-violet-dot: #8D3FCB;
+
+$color-card-green-btn-fill: linear-gradient(to right, rgba(#325753, 55%), rgba(#389A66, 55%)); // make it 50%
+$color-card-green-btn-stroke: linear-gradient(to top right, #315652, #389A65);
+$color-card-green-dot: #257048;
+
+$color-card-red-btn-fill: linear-gradient(to right, rgba(#663023, 55%), rgba(#F36F4E, 55%)); // make it 50%
+$color-card-red-btn-stroke: linear-gradient(to top right, #663022, #F36E4E);
+$color-card-red-dot: #79240F;
+
+$color-card-neon-green-btn-fill: linear-gradient(to right, rgba(#566825, 55%), rgba(#F4FD4B, 55%)); // make it 50%
+$color-card-neon-green-btn-stroke: linear-gradient(to top right, #556724, #F5FE4B);
+$color-card-neon-green-dot: #AEE90D;
+
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
 
 *,
 *::before,
@@ -37,33 +74,36 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  color: $text-grey;
   background-color: $color-black;
 }
 
 .primary_btn {
-  width: 172px;
-  height: 48px;
+  // width: 172px;
+  // height: 48px;
   color: $color-white;
-  outline: none;
-  border: none;
-  font-size: 14px;
-  font-weight: 500;
-  background-color: $color-black;
+  // outline: none;
+
+  font-size: 16px;
+  font-weight: $font-medium;
+  background: transparent;
   text-align: start;
-  padding: 16px;
-  border-image: $color-clickable 1;
-  border-width: 2px;
-  border-style: solid;
+  padding: 12px 20px 12px 28px;
+  border: 1px solid #A76553;
   cursor: pointer;
   display: flex;
   align-items: center;
+  border-radius: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  column-gap: 16px;
+  margin-top: 36px;
 
   &:hover {
-    transform: translateY(-0.1rem) scale(1.03);
-    border: none;
-    background-color: $color-hover;
+    background: $color-card-orange-btn-fill;
+    padding: 12px 24px 12px 28px;
   }
 
   &:active {
@@ -80,7 +120,7 @@ body {
 }
 
 p {
-  font-family: "Karla", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 a {

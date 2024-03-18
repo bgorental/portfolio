@@ -16,14 +16,36 @@
     overflow: hidden;
     z-index: 5;
     background-color: $color-black;
-    padding: 2rem 3rem;
-    width: 100%;
+    padding: 45px 0;
+    margin: auto;
+
+    width: 70%;
 
     &_logo {
       cursor: pointer;
+      display: flex;
+      column-gap: 1rem;
 
       img {
-        height: 2.2rem;
+        width: 120px;
+        height: auto;
+      }
+
+      &-cont {
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+          font-size: 16px;
+          font-weight: $font-semibold;
+          color: $text-imp;
+        }
+
+        &-role {
+          font-size: 16px;
+          font-weight: $font-regular;
+          color: $text-grey;
+        }
       }
     }
 
@@ -32,37 +54,57 @@
       list-style: none;
 
       a {
-        font-size: 0.9rem;
-        font-weight: 700;
-        margin-left: 4rem;
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 48px;
         text-transform: uppercase;
         cursor: pointer;
         transform: all 0.3s;
         position: relative;
-        padding-bottom: 12px;
-        color: $color-white;
+        padding-bottom: 8px;
+        color: $text-imp;
         text-decoration: none !important;
 
         &:after {
           content: "";
           position: absolute;
-          background: $color-clickable;
-          height: 0;
-          width: 100%;
-          left: 0;
+          background: $text-imp;
+          width: 16px;
+          left: 50%;
+          transform: translateX(-50%);
           bottom: 0px;
           transition: 0.2s;
+          border-radius: 50px;
         }
 
         &:hover {
-          // color: $color-hover;
+          // color: $color-primary-gradient !important;
+          background: $color-primary-gradient;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
 
           &:after {
-            height: 5px;
-            background: $color-clickable;
+            height: 3px;
+            background: $text-imp;
           }
         }
       }
+    }
+  }
+
+  .active {
+    background: $color-primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 3px !important;
+      width: 100%;
+      left: 0;
+      bottom: 0px;
+      transition: 0.2s;
     }
   }
 
@@ -75,65 +117,14 @@
   }
 
   .footer {
-    padding: 4rem 0;
-    padding-top: 5rem !important;
-    background-color: #1a1a1a;
+    padding: 80px 0 50px 0;
+    padding-top: 7rem !important;
+    background-color: #121213;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1rem;
     color: #6e6e6e;
-
-    div>p:not(:last-child),
-    div>div {
-      margin-bottom: 1.2rem;
-    }
-
-    #brand {
-      text-decoration: none;
-      color: $color-white;
-      font-size: 1.5rem;
-
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
-
-      &:hover {
-        color: $color-primary;
-        // background: $color-clickable;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
-      }
-
-      &:active {
-        color: $color-active;
-      }
-    }
-
-    .email_id {
-      font-size: 1.2rem;
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    .copyright {
-      margin-top: 1.4rem;
-      font-size: 0.8rem;
-    }
-  }
-}
-
-.active {
-  &:after {
-    content: "";
-    position: absolute;
-    height: 5px !important;
-    background: $color-clickable !important;
-    width: 100%;
-    left: 0;
-    bottom: 0px;
-    transition: 0.2s;
   }
 }
 
@@ -228,4 +219,56 @@
   position: static !important;
   transition: 0.2s linear !important;
   top: -100px !important;
+}
+
+.footer--headline {
+  font-size: 56px;
+  font-weight: $font-light;
+  color: $text-grey;
+  margin-bottom: 4px !important;
+
+  span {
+    font-weight: $font-semibold;
+    color: $text-imp;
+  }
+}
+
+.footer--tagline {
+  font-size: 18px;
+  font-weight: $font-light;
+  color: $text-imp;
+  margin-bottom: 60px !important;
+}
+
+#brand {
+  text-decoration: none;
+  color: $color-white;
+  font-size: 28px;
+
+  &:not(:last-child) {
+    margin-right: 56px;
+  }
+
+  &:hover {
+    color: $color-primary;
+    // font-size: 38px;
+    // background: $color-clickable;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
+
+.copyright {
+  margin-top: 60px !important;
+  font-size: 16px;
+  font-weight: $font-light;
+  color: $text-grey;
+
+  span {
+    font-weight: $font-regular;
+  }
 }
