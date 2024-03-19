@@ -132,10 +132,32 @@ a {
   }
 }
 
-@media only screen and (max-width: 420px) {
+// @media only screen and (max-width: 420px) {
+//   .primary_btn {
+//     font-size: 11px;
+//     padding: 11px !important;
+//     margin: 0;
+//   }
+// }
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (max-width: 80em) {
   .primary_btn {
-    font-size: 11px;
-    padding: 11px !important;
-    margin: 0;
+    font-size: 15px;
+    margin-top: 28px;
   }
 }
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (max-width: 64em) {
+  .primary_btn {
+    font-size: 14px;
+    margin-top: 28px;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 48em) {}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 40em) {}
