@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
 
   onResume() {
     window.open(
-      "https://drive.google.com/file/d/1lgAkYR7VEbHQ1HKOSeUf8X6E7EmUVNEN/view?usp=drive_link"
+      "https://drive.google.com/file/d/1G8LrdmvBIJzGe9LVFUBOG-O0cqEA4rUT/view"
     );
   }
 
