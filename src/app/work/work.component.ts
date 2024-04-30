@@ -29,6 +29,10 @@ export class WorkComponent implements OnInit {
       window.open(
         "https://bgorental.medium.com/multifunctional-kitchen-cleaning-device-6909cfadb446"
       );
+    } else if (work == 'admin_dashboard') {
+      window.open(
+        "https://drive.google.com/file/d/1Xavqzr2qSVXbozlM6-U2qOAl-QzdNrBM/view"
+      );
     } else {
       this.router.navigate([`/${work}`]);
     }

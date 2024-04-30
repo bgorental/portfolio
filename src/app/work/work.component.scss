@@ -485,6 +485,39 @@
       }
     }
   }
+
+  &__each__card--admin {
+    flex-direction: row;
+
+    background: url("./../../assets/work/presentation/admin-dashboard/admin-dashboard-background-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--content {
+      padding: 24px;
+
+      &--head {
+        line-height: normal;
+      }
+
+      &--details {
+        .dot {
+          background-color: #018594;
+        }
+      }
+
+      &--btn {
+        .primary_btn {
+          border-color: #018594;
+
+          &:hover {
+            background: linear-gradient(to right, rgba(#053644, 55%), rgba(#00A7BB, 55%));
+          }
+        }
+      }
+    }
+  }
 }
 
 .about__me {
@@ -976,4 +1009,8 @@
       }
     }
   }
+}
+
+.mt-130 {
+  margin-top: 130px;
 }
