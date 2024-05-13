@@ -31,7 +31,7 @@ export class WorkComponent implements OnInit {
       );
     } else if (work == 'admin_dashboard') {
       window.open(
-        "https://drive.google.com/file/d/1Xavqzr2qSVXbozlM6-U2qOAl-QzdNrBM/view"
+        "https://drive.google.com/file/d/13T9R-f3G01iW7F-V17oexnrZwNHvJqPH/view"
       );
     } else {
       this.router.navigate([`/${work}`]);
