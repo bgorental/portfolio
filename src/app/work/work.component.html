@@ -20,14 +20,24 @@
         >
           I enjoy turning user needs into engaging experiences.
         </div>
-        <button
-          class="primary_btn button-with-arrow"
-          [routerLink]="['/about']"
-          routerLinkActive="active"
-        >
-          Know More
-          <div class="arrow_img"></div>
-        </button>
+        <div style="display: flex; column-gap: 20px">
+          <button
+            class="primary_btn button-with-arrow primary_btn-hover"
+            (click)="onResume()"
+          >
+            Resume
+            <div class="arrow_img"></div>
+          </button>
+          <button
+            class="primary_btn button-with-arrow"
+            [routerLink]="['/about']"
+            routerLinkActive="active"
+          >
+            Know More
+            <div class="arrow_img"></div>
+          </button>
+        </div>
+
         <!-- <a class="primary_btn" href="mailto:bgorental@gmail.com">
             Say Hello!
             <div class="hello_img"></div

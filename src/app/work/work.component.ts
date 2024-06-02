@@ -7,16 +7,15 @@ import { Router } from "@angular/router";
   styleUrls: ["./work.component.scss"],
 })
 export class WorkComponent implements OnInit {
+  project_arrow: any = "./../../assets/work/arrow-icon-enable.png";
 
-  project_arrow: any = './../../assets/work/arrow-icon-enable.png'
+  constructor(private router: Router) {}
 
-  constructor(private router: Router) { }
-
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   onResume() {
     window.open(
-      "https://drive.google.com/file/d/1eSH3LxOuSM5HgLw53vRGaZm1JnXnbdd3/view"
+      "https://drive.google.com/file/d/1AB2qvqYIePVNLZgcCd_DC0sXhyCj35SS/view"
     );
   }
 
@@ -29,7 +28,7 @@ export class WorkComponent implements OnInit {
       window.open(
         "https://bgorental.medium.com/multifunctional-kitchen-cleaning-device-6909cfadb446"
       );
-    } else if (work == 'admin_dashboard') {
+    } else if (work == "admin_dashboard") {
       window.open(
         "https://drive.google.com/file/d/13T9R-f3G01iW7F-V17oexnrZwNHvJqPH/view"
       );

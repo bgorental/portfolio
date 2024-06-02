@@ -30,7 +30,7 @@ export class AppComponent {
 
   onResume() {
     window.open(
-      "https://drive.google.com/file/d/1eSH3LxOuSM5HgLw53vRGaZm1JnXnbdd3/view"
+      "https://drive.google.com/file/d/1AB2qvqYIePVNLZgcCd_DC0sXhyCj35SS/view"
     );
   }
 
