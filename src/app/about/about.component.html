@@ -1,24 +1,35 @@
 <div class="about_cont" id="about_cont">
   <div class="about_cont-introduce_img">
     <div class="about_cont-introduce">
-      <span
-        >Just a <span class="text_imp">simple guy</span>
-        <br class="line_breaker" />
-        who wants to create <span class="text_imp">awesome stuff!</span></span
+      <span>
+        Whether it's solving a
+        <span class="about__me--content--text--imp"
+          >complex design problem, or just fixing a small issue</span
+        >
+        in the house,
+        <span class="about__me--content--text--imp"
+          >I aim for simple, intuitive solutions</span
+        >
+        that will improve the lives around me.</span
       >
-      <a class="primary_btn" href="mailto:bgorental@gmail.com">
+      <button
+        class="primary_btn"
+        style="padding: 12px 20px 12px 28px !important"
+        (click)="onResume()"
+      >
+        Resume
+        <div class="arrow_img"></div>
+      </button>
+      <!-- <a class="primary_btn" href="mailto:bgorental@gmail.com">
         Say Hello!
         <div class="hello_img"></div
-      ></a>
+      ></a> -->
     </div>
     <img
       src="./../../assets/about/bgoretal-pic.png"
       class="bharath-pic"
       alt=""
     />
-    <!-- <div class="about_cont-img">
-      
-    </div> -->
   </div>
 
   <div class="about_cont-content">
@@ -46,9 +57,10 @@
         </li>
       </ul> -->
       <div class="project-description" style="margin-bottom: 2rem">
-        I've played a pivotal role in enhancing user experience by streamlining
-        product search processes. Through collaborative design efforts, I've
-        significantly improved operational efficiency.
+        Independently managing all design tasks, I've been the driving force
+        behind the company's design direction. My focus has always been on
+        enhancing user experience by streamlining product search and boosting
+        operational efficiency through effective design and collaboration.
       </div>
 
       <ul class="project-list">
@@ -110,25 +122,42 @@
           </div>
         </li>
       </ul>
-      <!-- <ul>
-        <li>
-          Developed intuitive interfaces with front-end logic using Angular,
-          HTML, CSS/ SCSS/ SASS, and JavaScript.
-        </li>
-        <li>
-          Ensured code quality through comprehensive testing, including the
-          implementation of unit tests.
-        </li>
-      </ul> -->
     </div>
   </div>
 
-  <button
-    class="primary_btn"
-    style="padding: 12px 20px 12px 28px !important; margin-bottom: 150px"
-    (click)="onResume()"
-  >
-    Resume
-    <div class="arrow_img"></div>
-  </button>
+  <!-- <div class="about__me">
+    <div class="about__me--content">
+      <div class="about__me--content--text">
+        My skills extend beyond design -
+        <span class="about__me--content--text--imp"
+          >I enjoy photography, music, and exploring new places.
+        </span>
+      </div>
+    </div>
+    <div class="about__me--img">
+      <div><img src="./../../assets/about/music-img.png" alt="" /></div>
+      <div class="about__me--img--2">
+        <img src="./../../assets/about/photography-img.png" alt="" />
+        <img src="./../../assets/about/travel-img.png" alt="" />
+      </div>
+    </div>
+  </div> -->
+
+  <div class="highlights">
+    <div class="about-head">
+      My skills extend beyond design -
+      <span class="about__me--content--text--imp"
+        >I enjoy photography, music, and exploring new places.
+      </span>
+    </div>
+    <div class="highlights--imgs">
+      <img src="./../../assets/about/photography-img.png" alt="" />
+      <img
+        class="highlights--imgs--large"
+        src="./../../assets/about/music-img.png"
+        alt=""
+      />
+      <img src="./../../assets/about/travel-img.png" alt="" />
+    </div>
+  </div>
 </div>

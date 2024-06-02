@@ -1,4 +1,48 @@
 <div class="cont_main">
+  <div class="about_cont" id="about_cont">
+    <div class="about_cont-introduce_img">
+      <div class="about_cont-introduce">
+        <!-- <span
+            >Just a <span class="text_imp">simple guy</span>
+            <br class="line_breaker" />
+            who wants to create <span class="text_imp">awesome stuff!</span></span
+          > -->
+        <span
+          ><span class="text_imp"
+            >Product Designer <br class="line_breaker" />with over 2 years of
+            experience,</span
+          >
+          previously a Front-end Developer</span
+        >
+        <div
+          class="project-description"
+          style="font-size: 24px; margin-top: 1.5rem"
+        >
+          I enjoy turning user needs into engaging experiences.
+        </div>
+        <button
+          class="primary_btn button-with-arrow"
+          [routerLink]="['/about']"
+          routerLinkActive="active"
+        >
+          Know More
+          <div class="arrow_img"></div>
+        </button>
+        <!-- <a class="primary_btn" href="mailto:bgorental@gmail.com">
+            Say Hello!
+            <div class="hello_img"></div
+          ></a> -->
+      </div>
+      <img
+        src="./../../assets/about/bgoretal-pic.png"
+        class="bharath-pic"
+        alt=""
+      />
+      <!-- <div class="about_cont-img">
+          
+        </div> -->
+    </div>
+  </div>
   <div class="works-cont">
     <div class="head"><span>Okkular</span> Projects</div>
     <div class="works">
@@ -256,40 +300,7 @@
       </div>
     </div>
   </div>
-  <div class="about__me">
-    <div class="about__me--content">
-      <div class="head">A bit<span> About me</span></div>
-      <div class="about__me--content--text">
-        I am a Product Designer at heart.<span
-          class="about__me--content--text--imp"
-        >
-          <br />
-          Whether it's solving a complex design problem, or just fixing a small
-          issue in the house, I aim for simple, intuitive solutions that will
-          improve the lives around me.
-        </span>
-        <br />
-        <br />
-        My skills extend beyond design - I'm also a front-end developer. Outside
-        of work, I enjoy photography, music, and exploring new places.
-      </div>
-      <button
-        class="primary_btn button-with-arrow"
-        [routerLink]="['/about']"
-        routerLinkActive="active"
-      >
-        Know More
-        <div class="arrow_img"></div>
-      </button>
-    </div>
-    <div class="about__me--img">
-      <div><img src="./../../assets/about/music-img.png" alt="" /></div>
-      <div class="about__me--img--2">
-        <img src="./../../assets/about/photography-img.png" alt="" />
-        <img src="./../../assets/about/travel-img.png" alt="" />
-      </div>
-    </div>
-  </div>
+
   <div class="highlights">
     <div class="head">Recent <span>Highlights</span></div>
     <div class="highlights--imgs">

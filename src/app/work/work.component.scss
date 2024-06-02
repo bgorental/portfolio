@@ -1,4 +1,5 @@
 @import "./../../styles.scss";
+@import "./../../app/about/about.component.scss";
 
 // .buttons {
 //   display: flex;
@@ -233,7 +234,6 @@
 
 
 .cont_main {
-  width: 70%;
   margin: auto;
 }
 
@@ -254,7 +254,12 @@
   flex-direction: column;
   row-gap: 120px;
 
-  &-cont {}
+
+  &-cont {
+    width: 75%;
+    margin: auto;
+    margin-top: 80px;
+  }
 
   &__each__card {
     display: flex;
@@ -520,45 +525,6 @@
   }
 }
 
-.about__me {
-  margin-top: 200px;
-  display: flex;
-  column-gap: 48px;
-
-  &--img {
-    display: flex;
-    align-items: center;
-    column-gap: 32px;
-
-    &--2 {
-      display: flex;
-      flex-direction: column;
-      row-gap: 32px;
-    }
-
-    img {
-      width: 280px;
-    }
-  }
-}
-
-.about__me--content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  &--text {
-    font-size: 29px;
-    font-weight: $font-light;
-    color: $text-grey;
-
-    &--imp {
-      color: $text-imp;
-      font-weight: $font-medium;
-    }
-  }
-}
-
 .button-with-arrow {
   width: max-content;
 
@@ -579,7 +545,8 @@
 }
 
 .highlights {
-  margin: 200px 0;
+  width: 75%;
+  margin: 200px auto;
 
   &--imgs {
     display: flex;
@@ -635,7 +602,11 @@
     flex-direction: column;
     row-gap: 110px;
 
-    &-cont {}
+    &-cont {
+      width: 75%;
+      margin: auto;
+      margin-top: 60px;
+    }
 
     &__each__card {
       padding: 20px;
@@ -730,7 +701,11 @@
     flex-direction: column;
     row-gap: 100px;
 
-    &-cont {}
+    &-cont {
+      width: 85%;
+      margin: auto;
+      margin-top: 60px;
+    }
 
     &__each__card {
       padding: 18px;
@@ -789,6 +764,7 @@
   }
 
   .highlights {
+    width: 85%;
     margin: 160px 0;
   }
 }
@@ -820,7 +796,11 @@
     flex-direction: column;
     row-gap: 80px;
 
-    &-cont {}
+    &-cont {
+      width: 85%;
+      margin: auto;
+      margin-top: 60px;
+    }
 
     &__each__card {
       padding: 20px;
@@ -877,6 +857,7 @@
   }
 
   .highlights {
+    width: 85%;
     margin: 150px 0;
 
     &--imgs {
@@ -926,7 +907,11 @@
     flex-direction: column;
     row-gap: 60px;
 
-    &-cont {}
+    &-cont {
+      width: 100%;
+      margin: auto;
+      margin-top: 60px;
+    }
 
     &__each__card {
       padding: 20px;
@@ -989,6 +974,7 @@
   }
 
   .highlights {
+    width: 100%;
     margin: 140px 0;
 
     &--imgs {
@@ -1008,6 +994,10 @@
         height: auto;
       }
     }
+  }
+
+  .about_cont {
+    width: 100% !important;
   }
 }
 

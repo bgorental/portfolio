@@ -1,16 +1,28 @@
 @import "./../../styles.scss";
 
+.about-head {
+  font-size: 32px;
+  font-weight: $font-light;
+  color: $text-grey;
+  margin-bottom: 32px;
+
+  span {
+    font-weight: $font-semibold;
+    color: $text-imp;
+  }
+}
+
 .about_cont {
-  width: 70%;
+  width: 75%;
   margin: auto;
   margin-top: 0;
   display: flex;
   flex-direction: column;
 
   &-introduce {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: $font-medium;
-    width: 40%;
+    width: 45%;
     color: $text-grey;
     margin-right: 10rem;
 
@@ -97,8 +109,48 @@
   }
 }
 
+.about__me {
+  width: 100%;
+  margin: 200px auto;
+  display: flex;
+  column-gap: 48px;
+
+  &--img {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+
+    &--2 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 32px;
+    }
+
+    img {
+      width: 280px;
+    }
+  }
+}
+
+.about__me--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--text {
+    font-size: 29px;
+    font-weight: $font-light;
+    color: $text-grey;
+
+    &--imp {
+      color: $text-imp;
+      font-weight: $font-medium;
+    }
+  }
+}
+
 .bharath-pic {
-  width: 30%;
+  width: 25%;
 }
 
 .line_breaker {
@@ -172,6 +224,30 @@
 .project-list .project-description {
   transform: translateX(2rem);
   font-size: 20px !important;
+}
+
+.highlights {
+  width: 100%;
+  margin: 80px auto;
+  margin-bottom: 12rem;
+
+  &--imgs {
+    display: flex;
+    column-gap: 4%;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+
+    &--large {
+      width: 38% !important;
+      height: auto;
+    }
+
+    img {
+      width: 29%;
+      height: auto;
+    }
+  }
 }
 
 // @media only screen and (max-width: 1200px) {
@@ -290,6 +366,11 @@
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (max-width: 80em) {
 
+  .about-head {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
   .line_breaker {
     display: none;
   }
@@ -299,7 +380,7 @@
     margin-top: 50px;
 
     &-introduce {
-      font-size: 36px;
+      font-size: 32px;
       width: 50%;
     }
 
@@ -357,10 +438,41 @@
   .project-list .project-description {
     font-size: 20px;
   }
+
+  .about__me {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    &--img {
+      column-gap: 30px;
+      justify-content: center;
+
+      &--2 {
+        row-gap: 30px;
+      }
+
+      img {
+        width: 240px;
+      }
+    }
+  }
+
+  .about__me--content {
+    &--text {
+      font-size: 24px;
+    }
+  }
 }
 
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (max-width: 64em) {
+
+  .about-head {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
 
   .about_cont {
     width: 80%;
@@ -389,10 +501,43 @@
   .project-list .project-description {
     font-size: 19px;
   }
+
+  .about__me {
+    margin-top: 160px;
+
+    &--img {
+      column-gap: 28px;
+      justify-content: center;
+
+      &--2 {
+        row-gap: 28px;
+      }
+
+      img {
+        width: 280px;
+      }
+    }
+  }
+
+  .about__me--content {
+    &--text {
+      font-size: 24px;
+    }
+  }
+
+  .highlights {
+    width: 100%;
+    margin: 50px 0;
+  }
 }
 
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (max-width: 48em) {
+
+  .about-head {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 
   .about_cont {
     width: 85%;
@@ -426,17 +571,67 @@
     transform: translateX(0) !important;
     font-size: 18px;
   }
+
+  .about__me {
+    margin-top: 150px;
+
+    &--img {
+      &--2 {
+        row-gap: 28px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .about__me--content {
+    &--text {
+      font-size: 22px;
+    }
+  }
+
+  .highlights {
+    width: 100%;
+    margin: 40px 0;
+
+    &--imgs {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      align-items: center;
+      width: 75%;
+      margin: auto;
+
+      &--large {
+        width: 100% !important;
+        height: auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 /* Small devices such as large phones (640px and up) */
 @media only screen and (max-width: 40em) {
+
+  .about-head {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
   .about_cont-introduce_img {
     flex-direction: column-reverse;
     row-gap: 2.5rem;
   }
 
   .about_cont {
-    width: 85%;
+    width: 90%;
     margin-top: 0px;
 
     &-img {
@@ -510,6 +705,57 @@
   }
 
   .bharath-pic {
-    width: 60%;
+    width: 50%;
+  }
+
+  .about__me {
+    margin-top: 50px;
+
+    &--img {
+      &--2 {
+        row-gap: 28px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .about__me--content {
+    &--text {
+      font-size: 22px;
+    }
+
+    .arrow_img {
+      width: 18px;
+      height: 20px;
+      transform: translateY(-2.6px) !important;
+    }
+  }
+
+  .highlights {
+    width: 100%;
+    margin: 30px 0;
+    margin-bottom: 80px;
+
+    &--imgs {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      align-items: center;
+      width: 75%;
+      margin: auto;
+
+      &--large {
+        width: 100% !important;
+        height: auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
