@@ -290,18 +290,19 @@
       flex-direction: column;
       padding-right: 2rem;
       align-self: end;
-      row-gap: 24px;
+      // row-gap: 24px;
+      row-gap: 16px;
       width: 80%;
       padding-bottom: 24px;
 
       &--head {
-        font-size: 80px;
+        font-size: 60px;
         font-weight: $font-semibold;
         color: $text-project-grey;
       }
 
       &--tagline {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: $font-light;
         color: $text-grey;
 
@@ -523,6 +524,10 @@
       }
     }
   }
+}
+
+.virtuFit-highlight-img {
+  width: 71% !important;
 }
 
 .button-with-arrow {
@@ -924,6 +929,7 @@
         width: 100%;
         padding-bottom: 16px;
         align-self: start;
+        padding-right: 0;
 
         &--head {
           font-size: 40px;
@@ -998,6 +1004,11 @@
 
   .about_cont {
     width: 100% !important;
+  }
+
+  .virtuFit-highlight-img {
+    width: 100% !important;
+    margin-top: 1rem;
   }
 }
 
