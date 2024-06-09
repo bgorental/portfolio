@@ -15,7 +15,7 @@ export class WorkComponent implements OnInit {
 
   onResume() {
     window.open(
-      "https://drive.google.com/file/d/1AB2qvqYIePVNLZgcCd_DC0sXhyCj35SS/view"
+      "https://drive.google.com/file/d/1S1UJc8aSxgRYyJzHDpuslUeGGdN1ahHJ/view"
     );
   }
 

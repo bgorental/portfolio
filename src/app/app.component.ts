@@ -12,17 +12,15 @@ export class AppComponent {
 
   navbarfixed: boolean = false;
 
-  @HostListener('window:scroll', ['$event']) onscroll() {
+  @HostListener("window:scroll", ["$event"]) onscroll() {
     if (window.scrollY > 100) {
       this.navbarfixed = true;
-    }
-
-    else {
+    } else {
       this.navbarfixed = false;
     }
   }
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   toggle_nav_fun() {
     this.toggle_nav = !this.toggle_nav;
@@ -30,7 +28,7 @@ export class AppComponent {
 
   onResume() {
     window.open(
-      "https://drive.google.com/file/d/1AB2qvqYIePVNLZgcCd_DC0sXhyCj35SS/view"
+      "https://drive.google.com/file/d/1S1UJc8aSxgRYyJzHDpuslUeGGdN1ahHJ/view"
     );
   }
 
