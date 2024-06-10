@@ -1,9 +1,18 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class ReusableService {
+  constructor() {}
 
-  constructor() { }
+  SocialMedia(link: any) {
+    window.open(link);
+  }
+
+  Resume() {
+    window.open(
+      "https://drive.google.com/file/d/1S1UJc8aSxgRYyJzHDpuslUeGGdN1ahHJ/view"
+    );
+  }
 }

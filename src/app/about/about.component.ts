@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ReusableService } from "../reusable.service";
 
 @Component({
   selector: "app-about",
@@ -6,13 +7,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./about.component.scss"],
 })
 export class AboutComponent implements OnInit {
-  constructor() {}
+  constructor(private reusableService: ReusableService) {}
 
   ngOnInit(): void {}
 
   onResume() {
-    window.open(
-      "https://drive.google.com/file/d/1S1UJc8aSxgRYyJzHDpuslUeGGdN1ahHJ/view"
-    );
+    this.reusableService.Resume();
   }
 }

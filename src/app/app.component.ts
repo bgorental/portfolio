@@ -1,5 +1,6 @@
 import { Component, HostListener } from "@angular/core";
 import { Router } from "@angular/router";
+import { ReusableService } from "./reusable.service";
 
 @Component({
   selector: "app-root",
@@ -20,19 +21,24 @@ export class AppComponent {
     }
   }
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private reusableService: ReusableService
+  ) {}
 
   toggle_nav_fun() {
     this.toggle_nav = !this.toggle_nav;
   }
 
   onResume() {
-    window.open(
-      "https://drive.google.com/file/d/1S1UJc8aSxgRYyJzHDpuslUeGGdN1ahHJ/view"
-    );
+    this.reusableService.Resume();
   }
 
   onLogo() {
     this.router.navigate(["/work"]);
+  }
+
+  onSocialMedia(link: any) {
+    this.reusableService.SocialMedia(link);
   }
 }

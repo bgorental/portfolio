@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { ReusableService } from "../reusable.service";
 
 @Component({
   selector: "app-work",
@@ -9,14 +10,19 @@ import { Router } from "@angular/router";
 export class WorkComponent implements OnInit {
   project_arrow: any = "./../../assets/work/arrow-icon-enable.png";
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private reusableService: ReusableService
+  ) {}
 
   ngOnInit(): void {}
 
+  onSocialMedia(link: any) {
+    this.reusableService.SocialMedia(link);
+  }
+
   onResume() {
-    window.open(
-      "https://drive.google.com/file/d/1S1UJc8aSxgRYyJzHDpuslUeGGdN1ahHJ/view"
-    );
+    this.reusableService.Resume();
   }
 
   onWork(work: string) {

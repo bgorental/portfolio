@@ -1015,3 +1015,21 @@
 .mt-130 {
   margin-top: 130px;
 }
+
+#brand {
+  text-decoration: none;
+  color: $color-white;
+  font-size: 28px;
+
+  &:not(:last-child) {
+    margin-right: 56px;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
